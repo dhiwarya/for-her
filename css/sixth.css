@@ -1,0 +1,45 @@
+:root {
+    font-family :Arial, Helvetica, sans-serif;
+}
+
+body {
+    display : flex;
+    flex-direction : column;
+    justify-content: center;
+    margin : 0;
+    background-color: #EEEBE3;
+}
+
+header {
+    margin-top : 10px;
+}
+
+header a {
+    display : flex;
+    align-items: center;
+}
+
+.content {
+    display : grid;
+    grid-template-columns: 200px 200px 200px 200px;
+    grid-template-rows : auto auto;
+    justify-content: center;
+    align-items: center;
+    gap : 50px;
+}
+
+div video {
+    width : 200px;
+    height: auto;
+}
+
+div img {
+    width : 200px;
+    height: auto;
+}
+
+main a {
+    display : flex;
+    justify-content: center;
+    margin : 50px;
+}
