@@ -102,8 +102,12 @@ div p {
     font-size : 1.5em;
 }
 
-main a {
-    display : flex;
+main {
+    display: flex;
+    flex-direction: column;
     justify-content: center;
-    margin : 75px;
+}
+
+audio {
+    margin : 20px 500px 20px
 }
