@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>THE HAPPIEST MAN ALIVE</title>
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <link rel="stylesheet" href="css/yes.css">
+</head>
+<body>
+    <main>
+        <h1><i><u>Terms & Conditions</u></i></h1>
+        <div>
+            <ol type="1">
+                <li>Be Honest and Respectful.</li>
+                <li>Genuinely likes each other.</li>
+                <li>An ability to show and accept affection.</li>
+                <li>A strong sense of commitment to the relationship; a willingness to stick with the relationship through momentary conflicts and periods of disinterest, or dislikes</li>
+                <li>Effective communication and problem solving skills</li>
+                <li>Ability forgive and accept forgiveness.</li>
+                <li>Realistic and agreed upon expectations of each other; with willingness to live up to those expectations.</li>
+                <li>A shared philosophy of life — including values and principles. This is very broad and very important. For instance, it includes shared attitudes about family and friends; and shared philosophy on parenting.</li>
+                <li>A satisfying affectionate relationship (give me hugs nigg)</li>
+            </ol>
+        </div>
+        <div>
+            <form id="termsForm">
+                <label>
+                    <input type="checkbox" name="terms" id="terms" value="accepted" required>
+                    I accept the terms and conditions
+                </label>
+                <br><br>
+                <button type="button" onclick="redirect()">Submit</button>
+            </form>            
+        </div>
+    </main>
+    <script>
+        function redirect() {
+            const terms = document.getElementById('terms');
+            if (terms.checked) {
+                window.location.href = 'thank_you.html'; 
+            } else {
+                alert('You must accept the terms and conditions to proceed.');
+            }
+        }
+    </script>
+</body>
+</html>
