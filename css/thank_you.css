@@ -1,0 +1,109 @@
+:root {
+    font-family :Arial, Helvetica, sans-serif;
+}
+
+body {
+    display : flex;
+    flex-direction : column;
+    justify-content: center;
+    margin : 0;
+    background-color: #EEEBE3;
+}
+
+header {
+    margin-top : 10px;
+}
+
+header a {
+    display : flex;
+    align-items: center;
+}
+
+.container {
+    display : grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+    gap : 50px;
+    grid-template-areas: 
+        "a h c"
+        "d b e"
+        "f i g";
+    justify-items: center;
+    align-items: center;
+    margin : 50px 100px 50px 100px;
+}
+
+#grid-area-a {
+    grid-area : a;
+}
+
+#grid-area-a img {
+    transform : rotate(-10deg)
+}
+
+#grid-area-b {
+    grid-area : b;
+}
+
+#grid-area-c {
+    grid-area : c;
+}
+
+#grid-area-c img {
+    transform: rotate(10deg);
+}
+
+#grid-area-d {
+    grid-area : d;
+}
+
+#grid-area-d img {
+    transform: rotate(10deg);
+}
+
+#grid-area-e {
+    grid-area : e;
+}
+
+#grid-area-e img {
+    transform: rotate(-10deg);
+}
+
+#grid-area-f {
+    grid-area : f;
+}
+
+#grid-area-f img {
+    transform: rotate(-10deg);
+}
+
+#grid-area-g {
+    grid-area : g;
+}
+
+#grid-area-g img {
+    transform: rotate(10deg);
+}
+
+#grid-area-h {
+    grid-area : h
+}
+
+#grid-area-i {
+    grid-area : i
+}
+
+div img {
+    width : 100px;
+    height: auto;
+}
+
+div p {
+    font-size : 1.5em;
+}
+
+main a {
+    display : flex;
+    justify-content: center;
+    margin : 75px;
+}
